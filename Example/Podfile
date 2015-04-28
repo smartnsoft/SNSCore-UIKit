@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'SNSCoreKit', :exclusive => true do
+  pod "SNSCoreKit", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "SNSCoreKit", :path => "../"
+
+  
+end
