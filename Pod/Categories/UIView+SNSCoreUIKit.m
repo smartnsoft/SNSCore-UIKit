@@ -10,6 +10,7 @@
 
 @implementation UIView (SNSCoreUIKit)
 
+#pragma mark - Recursively methods
 /**
  * @abstract
  *  Recursively checks all superview of caller view until nil is found.
@@ -145,4 +146,48 @@
     }];
 }
 
+#pragma mark - Customs shape view
+/**
+ *  Cut the side of the view
+ *
+ *  @param sideToCut The view side to cut
+ *
+ *  @return A layer mask to apply to the view
+ */
+- (void) cutSide:(CutterViewSideType)sideToCut
+{
+    CGRect bounds = self.bounds;
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.frame = bounds;
+    maskLayer.fillColor = [UIColor blackColor].CGColor;
+    
+    CGPoint points[3];
+    
+    switch (sideToCut)
+    {
+        case CutterViewSideTypeLeft:
+            points[0] = CGPointZero;
+            points[1] = CGPointMake(50, 0);
+            points[2] = CGPointMake(0, self.frame.size.height);
+            break;
+        case CutterViewSideTypeRight:
+            points[0] = CGPointMake(self.frame.size.width, 0);
+            points[1] = CGPointMake(self.frame.size.width, self.frame.size.height);
+            points[2] = CGPointMake(self.frame.size.width - 50, self.frame.size.height);
+            break;
+        default:
+            break;
+    }
+    
+    CGMutablePathRef cgPath = CGPathCreateMutable();
+    CGPathAddLines(cgPath, &CGAffineTransformIdentity, points, sizeof points / sizeof *points);
+    CGPathCloseSubpath(cgPath);
+    
+    UIBezierPath *path =  [UIBezierPath bezierPathWithCGPath:cgPath];
+    [path appendPath:[UIBezierPath bezierPathWithRect:bounds]];
+    maskLayer.path = path.CGPath;
+    maskLayer.fillRule = kCAFillRuleEvenOdd;
+    
+    self.layer.mask = maskLayer;
+}
 @end

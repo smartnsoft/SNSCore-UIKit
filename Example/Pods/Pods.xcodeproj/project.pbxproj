@@ -20,6 +20,8 @@
 		86487AFD2A51863FCEB5EC85 /* SNSDropListViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 227FDC84A9C8387D9083AFF3 /* SNSDropListViewCell.h */; };
 		A9E2470C96DAE4425099BB88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F004759FD6BFFEC3EA8E6E38 /* Foundation.framework */; };
 		B169E4001AF6320F00B9B6BF /* UIView+SNSCoreUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B169E3FF1AF6320F00B9B6BF /* UIView+SNSCoreUIKit.m */; };
+		B173BBD01AF6459900E95069 /* UIColor+SNSCoreUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B173BBCF1AF6459900E95069 /* UIColor+SNSCoreUIKit.m */; };
+		B173BBD31AF6480100E95069 /* UINavigationController+SNSCoreUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B173BBD21AF6480100E95069 /* UINavigationController+SNSCoreUIKit.m */; };
 		C9AC383FD5818056A5644316 /* Pods-SNSCore-UIKit-SNSCore-UIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BC89477F4921A70C29A840 /* Pods-SNSCore-UIKit-SNSCore-UIKit-dummy.m */; };
 		CFECA15A0B553BD49DC6831E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F004759FD6BFFEC3EA8E6E38 /* Foundation.framework */; };
 		D775A7DDB81C43CC9FD3733B /* SNSDropListView.h in Headers */ = {isa = PBXBuildFile; fileRef = AACB54D82154681B1D74ABB4 /* SNSDropListView.h */; };
@@ -82,6 +84,10 @@
 		AACB54D82154681B1D74ABB4 /* SNSDropListView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNSDropListView.h; path = Pod/Classes/SNSDropListView.h; sourceTree = "<group>"; };
 		B169E3FE1AF6320F00B9B6BF /* UIView+SNSCoreUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SNSCoreUIKit.h"; sourceTree = "<group>"; };
 		B169E3FF1AF6320F00B9B6BF /* UIView+SNSCoreUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SNSCoreUIKit.m"; sourceTree = "<group>"; };
+		B173BBCE1AF6459900E95069 /* UIColor+SNSCoreUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SNSCoreUIKit.h"; sourceTree = "<group>"; };
+		B173BBCF1AF6459900E95069 /* UIColor+SNSCoreUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SNSCoreUIKit.m"; sourceTree = "<group>"; };
+		B173BBD11AF6480100E95069 /* UINavigationController+SNSCoreUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SNSCoreUIKit.h"; sourceTree = "<group>"; };
+		B173BBD21AF6480100E95069 /* UINavigationController+SNSCoreUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SNSCoreUIKit.m"; sourceTree = "<group>"; };
 		B4E743FB1E9558F8EA464C1D /* Pods-SNSCore-UIKit-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SNSCore-UIKit-environment.h"; sourceTree = "<group>"; };
 		B599E1865FC7796A32F8918D /* Pods-Tests-SNSCore-UIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-SNSCore-UIKit.xcconfig"; path = "../Pods-Tests-SNSCore-UIKit/Pods-Tests-SNSCore-UIKit.xcconfig"; sourceTree = "<group>"; };
 		C0561398D39DA7B66F1A6E28 /* Pods-SNSCore-UIKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNSCore-UIKit-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -142,10 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				B169E3FD1AF6320F00B9B6BF /* Categories */,
-				AACB54D82154681B1D74ABB4 /* SNSDropListView.h */,
-				7966E52F1A05D190D58E85DC /* SNSDropListView.m */,
-				227FDC84A9C8387D9083AFF3 /* SNSDropListViewCell.h */,
-				4DEC9D697EA6C89DE736F9B4 /* SNSDropListViewCell.m */,
+				B173BBCD1AF644F500E95069 /* Classes */,
 				5A2353446096DF9DBC0B10DF /* Support Files */,
 			);
 			name = "SNSCore-UIKit";
@@ -242,9 +245,24 @@
 			children = (
 				B169E3FE1AF6320F00B9B6BF /* UIView+SNSCoreUIKit.h */,
 				B169E3FF1AF6320F00B9B6BF /* UIView+SNSCoreUIKit.m */,
+				B173BBCE1AF6459900E95069 /* UIColor+SNSCoreUIKit.h */,
+				B173BBCF1AF6459900E95069 /* UIColor+SNSCoreUIKit.m */,
+				B173BBD11AF6480100E95069 /* UINavigationController+SNSCoreUIKit.h */,
+				B173BBD21AF6480100E95069 /* UINavigationController+SNSCoreUIKit.m */,
 			);
 			name = Categories;
 			path = Pod/Categories;
+			sourceTree = "<group>";
+		};
+		B173BBCD1AF644F500E95069 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AACB54D82154681B1D74ABB4 /* SNSDropListView.h */,
+				7966E52F1A05D190D58E85DC /* SNSDropListView.m */,
+				227FDC84A9C8387D9083AFF3 /* SNSDropListViewCell.h */,
+				4DEC9D697EA6C89DE736F9B4 /* SNSDropListViewCell.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		D9DF15FDDF622AA40C1FEBDD /* Frameworks */ = {
@@ -454,8 +472,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B173BBD31AF6480100E95069 /* UINavigationController+SNSCoreUIKit.m in Sources */,
 				6DDEEDC4219326E296BB0AA6 /* Pods-SNSCore-UIKit-dummy.m in Sources */,
 				B169E4001AF6320F00B9B6BF /* UIView+SNSCoreUIKit.m in Sources */,
+				B173BBD01AF6459900E95069 /* UIColor+SNSCoreUIKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
