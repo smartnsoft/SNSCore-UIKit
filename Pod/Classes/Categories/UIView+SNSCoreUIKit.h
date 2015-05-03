@@ -24,7 +24,9 @@ typedef NS_ENUM(NSUInteger, CutterViewSideType)
 - (UIView*)superviewOfClass:(Class)iClass;
 
 - (void)animateWithBounceEffect;
+-(void)fadeFromInitialAlpha:(CGFloat)initialAlpha finalAlpha:(CGFloat)finalAlpha andDuration:(NSTimeInterval)duration;
 
-- (void) cutSide:(CutterViewSideType)sideToCut;
+- (void)cutSide:(CutterViewSideType)sideToCut;
+- (void)setRoundedCorners:(UIRectCorner)corners radius:(CGSize)size;
 
 @end

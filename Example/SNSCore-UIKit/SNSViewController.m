@@ -7,6 +7,8 @@
 //
 
 #import "SNSViewController.h"
+#import <SNSCore-UIKit/UIView+SNSCoreUIKit.h>
+#import "Colours.h"
 
 @interface SNSViewController ()
 
@@ -18,12 +20,39 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // DropListView Example
+    SNSDropListView * dropListView = [[SNSDropListView alloc] initWithFrame:self.view.frame];
+    [dropListView setBackgroundColor:[UIColor colorFromHexString:@"#f587e4"]];
+    [dropListView setDelegate:self];
+    [dropListView setDataSource:self];
+    [dropListView cutSide:CutterViewSideTypeLeft];
+    [self.view addSubview:dropListView];
+    
+    
+    // Rounded View Example
+    UIView * roundedView = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 200, 200)];
+    [roundedView setBackgroundColor:[UIColor colorFromHexString:@"538535"]];
+    [roundedView setRoundedCorners:UIRectCornerAllCorners radius:CGSizeMake(50, 50)];
+    [dropListView addSubview:roundedView];
+    
+    // Fade IN/OUT Example
+    [roundedView fadeFromInitialAlpha:0.0f finalAlpha:0.7f andDuration:2.0f];
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - SNSDropListView Delegate
+- (SNSDropListViewCell*)dropList:(SNSDropListView*)iDropList cellForRow:(NSInteger)iRow
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    SNSDropListViewCell * dropListViewCell = [[SNSDropListViewCell alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 100)];
+    [dropListViewCell setBackgroundColor:[UIColor colorFromHexString:@"#663482"]];
+    return dropListViewCell;
+}
+
+
+#pragma mark - SNSDropListView Datasource
+- (NSInteger)numberOfRowsInDropList:(SNSDropListView*)iDropListView
+{
+    return 5;
 }
 
 @end

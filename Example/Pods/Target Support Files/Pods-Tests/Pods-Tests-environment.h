@@ -6,6 +6,12 @@
 // project.
 
 
+// Colours
+#define COCOAPODS_POD_AVAILABLE_Colours
+#define COCOAPODS_VERSION_MAJOR_Colours 5
+#define COCOAPODS_VERSION_MINOR_Colours 6
+#define COCOAPODS_VERSION_PATCH_Colours 2
+
 // SNSCore-UIKit
 #define COCOAPODS_POD_AVAILABLE_SNSCore_UIKit
 #define COCOAPODS_VERSION_MAJOR_SNSCore_UIKit 0

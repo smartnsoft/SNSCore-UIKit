@@ -190,4 +190,22 @@
     
     self.layer.mask = maskLayer;
 }
+
+/**
+ *  Add Rounded Corners to a UIView
+ *
+ *  @param corners The corners in which to apply changes
+ *  @param size    The size of the radius
+ */
+- (void)setRoundedCorners:(UIRectCorner)corners radius:(CGSize)size
+{
+    UIBezierPath* maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:size];
+    
+    CAShapeLayer* maskLayer = [[CAShapeLayer alloc]init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    
+    self.layer.mask = maskLayer;
+}
+
 @end
