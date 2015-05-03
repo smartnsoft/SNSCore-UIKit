@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02ADACB00BEF07A4A116EFF2 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB85298F4CBCBD171A575445 /* Pods-Tests-dummy.m */; };
+		16E2347029C7082EF4DE880A /* SNSDropListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC9D697EA6C89DE736F9B4 /* SNSDropListViewCell.m */; };
+		203EA42A823EE090C5D80F3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F004759FD6BFFEC3EA8E6E38 /* Foundation.framework */; };
+		344001D21E8F18AABBC3FD81 /* SNSDropListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEC9D697EA6C89DE736F9B4 /* SNSDropListViewCell.m */; };
+		556073960856125278008115 /* SNSDropListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7966E52F1A05D190D58E85DC /* SNSDropListView.m */; };
+		58E885310CB161AE141AE22F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F004759FD6BFFEC3EA8E6E38 /* Foundation.framework */; };
+		5A7367FBAF6D3D1C916E03A7 /* SNSDropListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7966E52F1A05D190D58E85DC /* SNSDropListView.m */; };
+		6C4E4CBA940748CEB333699E /* SNSDropListViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 227FDC84A9C8387D9083AFF3 /* SNSDropListViewCell.h */; };
+		6DDEEDC4219326E296BB0AA6 /* Pods-SNSCore-UIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1266836D76B786BE751B10AD /* Pods-SNSCore-UIKit-dummy.m */; };
+		828BFBAEC9B086B485450632 /* Pods-Tests-SNSCore-UIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D908F1B1218C1EED83E0C942 /* Pods-Tests-SNSCore-UIKit-dummy.m */; };
+		86487AFD2A51863FCEB5EC85 /* SNSDropListViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 227FDC84A9C8387D9083AFF3 /* SNSDropListViewCell.h */; };
+		A9E2470C96DAE4425099BB88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F004759FD6BFFEC3EA8E6E38 /* Foundation.framework */; };
+		B169E4001AF6320F00B9B6BF /* UIView+SNSCoreUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B169E3FF1AF6320F00B9B6BF /* UIView+SNSCoreUIKit.m */; };
+		C9AC383FD5818056A5644316 /* Pods-SNSCore-UIKit-SNSCore-UIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BC89477F4921A70C29A840 /* Pods-SNSCore-UIKit-SNSCore-UIKit-dummy.m */; };
+		CFECA15A0B553BD49DC6831E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F004759FD6BFFEC3EA8E6E38 /* Foundation.framework */; };
+		D775A7DDB81C43CC9FD3733B /* SNSDropListView.h in Headers */ = {isa = PBXBuildFile; fileRef = AACB54D82154681B1D74ABB4 /* SNSDropListView.h */; };
+		EBA78660B4B8B515002FA9D6 /* SNSDropListView.h in Headers */ = {isa = PBXBuildFile; fileRef = AACB54D82154681B1D74ABB4 /* SNSDropListView.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2259C9EE4F57DD823F1CCBA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 892E6F17F8AD143B8E63B98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17FC5512132F34919DC435AA;
+			remoteInfo = "SNSCore-UIKit";
+		};
+		79422EC7006EADB906DFD198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 892E6F17F8AD143B8E63B98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E639DA9A0CFFF1F07A562B6;
+			remoteInfo = "Pods-Tests-SNSCore-UIKit";
+		};
+		E5880D5CD45F35916D76839B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 892E6F17F8AD143B8E63B98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86E36DE776739C98920CAB48;
+			remoteInfo = "Pods-SNSCore-UIKit-SNSCore-UIKit";
+		};
+		EFE3BF75E1B820FE573C534F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 892E6F17F8AD143B8E63B98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17FC5512132F34919DC435AA;
+			remoteInfo = "SNSCore-UIKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01073E762821F58BCED9D714 /* Pods-SNSCore-UIKit-SNSCore-UIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNSCore-UIKit-SNSCore-UIKit.xcconfig"; sourceTree = "<group>"; };
+		0E070350D4C24B010C10E23B /* Pods-SNSCore-UIKit-SNSCore-UIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SNSCore-UIKit-SNSCore-UIKit-prefix.pch"; sourceTree = "<group>"; };
+		1266836D76B786BE751B10AD /* Pods-SNSCore-UIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SNSCore-UIKit-dummy.m"; sourceTree = "<group>"; };
+		132CDE212204101C7904FA24 /* libPods-SNSCore-UIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNSCore-UIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191F897C7086EB56251D933D /* Pods-Tests-SNSCore-UIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-SNSCore-UIKit-prefix.pch"; path = "../Pods-Tests-SNSCore-UIKit/Pods-Tests-SNSCore-UIKit-prefix.pch"; sourceTree = "<group>"; };
+		1C6E70738006155DD251D250 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		226EF5DBA4C816502799C0D1 /* Pods-SNSCore-UIKit-SNSCore-UIKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNSCore-UIKit-SNSCore-UIKit-Private.xcconfig"; sourceTree = "<group>"; };
+		227FDC84A9C8387D9083AFF3 /* SNSDropListViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNSDropListViewCell.h; path = Pod/Classes/SNSDropListViewCell.h; sourceTree = "<group>"; };
+		41632004363968D17ECCC030 /* libPods-Tests-SNSCore-UIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-SNSCore-UIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		451E2DB2546F37CA5362FCE2 /* Pods-SNSCore-UIKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNSCore-UIKit-resources.sh"; sourceTree = "<group>"; };
+		4DEC9D697EA6C89DE736F9B4 /* SNSDropListViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SNSDropListViewCell.m; path = Pod/Classes/SNSDropListViewCell.m; sourceTree = "<group>"; };
+		531F21D1FEC71767E8136DE1 /* SNSCore-UIKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SNSCore-UIKit.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A40E1977648E9BDF2B7FB3B /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		6341D019A64A5A0501482B7C /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DDBE66E7079E9C131053367 /* Pods-SNSCore-UIKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SNSCore-UIKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		7966E52F1A05D190D58E85DC /* SNSDropListView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SNSDropListView.m; path = Pod/Classes/SNSDropListView.m; sourceTree = "<group>"; };
+		7F942830066B889F6AF72051 /* libPods-SNSCore-UIKit-SNSCore-UIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNSCore-UIKit-SNSCore-UIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86CE7B7D0C78F045DC2A0AB4 /* Pods-SNSCore-UIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNSCore-UIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		8A743230014C60F5AE1EBA9B /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		94E1B682A73FF00E03A11C0F /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		A659A50AD6BE483B64A1DFFE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AACB54D82154681B1D74ABB4 /* SNSDropListView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNSDropListView.h; path = Pod/Classes/SNSDropListView.h; sourceTree = "<group>"; };
+		B169E3FE1AF6320F00B9B6BF /* UIView+SNSCoreUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SNSCoreUIKit.h"; sourceTree = "<group>"; };
+		B169E3FF1AF6320F00B9B6BF /* UIView+SNSCoreUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SNSCoreUIKit.m"; sourceTree = "<group>"; };
+		B4E743FB1E9558F8EA464C1D /* Pods-SNSCore-UIKit-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SNSCore-UIKit-environment.h"; sourceTree = "<group>"; };
+		B599E1865FC7796A32F8918D /* Pods-Tests-SNSCore-UIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-SNSCore-UIKit.xcconfig"; path = "../Pods-Tests-SNSCore-UIKit/Pods-Tests-SNSCore-UIKit.xcconfig"; sourceTree = "<group>"; };
+		C0561398D39DA7B66F1A6E28 /* Pods-SNSCore-UIKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNSCore-UIKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C389078567FD37A2CD618E8A /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C847FEB6DB77102EF6DBC668 /* Pods-Tests-SNSCore-UIKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-SNSCore-UIKit-Private.xcconfig"; path = "../Pods-Tests-SNSCore-UIKit/Pods-Tests-SNSCore-UIKit-Private.xcconfig"; sourceTree = "<group>"; };
+		CEEE5B6271EE5CF8CCC850AA /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D908F1B1218C1EED83E0C942 /* Pods-Tests-SNSCore-UIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-SNSCore-UIKit-dummy.m"; path = "../Pods-Tests-SNSCore-UIKit/Pods-Tests-SNSCore-UIKit-dummy.m"; sourceTree = "<group>"; };
+		E1BC89477F4921A70C29A840 /* Pods-SNSCore-UIKit-SNSCore-UIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SNSCore-UIKit-SNSCore-UIKit-dummy.m"; sourceTree = "<group>"; };
+		E423E5FE9670C3179350568C /* Pods-SNSCore-UIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNSCore-UIKit.release.xcconfig"; sourceTree = "<group>"; };
+		F004759FD6BFFEC3EA8E6E38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FB85298F4CBCBD171A575445 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60CA299A0060384711C0CF74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71AEAA1C59538E33288B56D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E885310CB161AE141AE22F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEBB10D98B838B5F7C73195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E2470C96DAE4425099BB88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6DBBF56C753B3CDD5DFED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFECA15A0B553BD49DC6831E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB2176240F3666D1B05D731F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				203EA42A823EE090C5D80F3F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29CA6C9C637F4434CA4580ED /* SNSCore-UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B169E3FD1AF6320F00B9B6BF /* Categories */,
+				AACB54D82154681B1D74ABB4 /* SNSDropListView.h */,
+				7966E52F1A05D190D58E85DC /* SNSDropListView.m */,
+				227FDC84A9C8387D9083AFF3 /* SNSDropListViewCell.h */,
+				4DEC9D697EA6C89DE736F9B4 /* SNSDropListViewCell.m */,
+				5A2353446096DF9DBC0B10DF /* Support Files */,
+			);
+			name = "SNSCore-UIKit";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2A2405F05F0D88F58A1BDA89 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F004759FD6BFFEC3EA8E6E38 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		318BF421DA25E0297C4B2FC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				531F21D1FEC71767E8136DE1 /* SNSCore-UIKit.bundle */,
+				132CDE212204101C7904FA24 /* libPods-SNSCore-UIKit.a */,
+				7F942830066B889F6AF72051 /* libPods-SNSCore-UIKit-SNSCore-UIKit.a */,
+				6341D019A64A5A0501482B7C /* libPods-Tests.a */,
+				41632004363968D17ECCC030 /* libPods-Tests-SNSCore-UIKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		495C5B4C09895F17D4DE0728 /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8A743230014C60F5AE1EBA9B /* Pods-Tests-acknowledgements.markdown */,
+				1C6E70738006155DD251D250 /* Pods-Tests-acknowledgements.plist */,
+				FB85298F4CBCBD171A575445 /* Pods-Tests-dummy.m */,
+				94E1B682A73FF00E03A11C0F /* Pods-Tests-environment.h */,
+				5A40E1977648E9BDF2B7FB3B /* Pods-Tests-resources.sh */,
+				C389078567FD37A2CD618E8A /* Pods-Tests.debug.xcconfig */,
+				CEEE5B6271EE5CF8CCC850AA /* Pods-Tests.release.xcconfig */,
+			);
+			name = "Pods-Tests";
+			path = "Target Support Files/Pods-Tests";
+			sourceTree = "<group>";
+		};
+		4B964CF5884FC0DD0E8B412E = {
+			isa = PBXGroup;
+			children = (
+				A659A50AD6BE483B64A1DFFE /* Podfile */,
+				4ED79E8F97DC7154A6F34A62 /* Development Pods */,
+				D9DF15FDDF622AA40C1FEBDD /* Frameworks */,
+				318BF421DA25E0297C4B2FC3 /* Products */,
+				E15C95DCED49FD7256064B84 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		4ED79E8F97DC7154A6F34A62 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29CA6C9C637F4434CA4580ED /* SNSCore-UIKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4ED84EBF0774DFC2A37E80E2 /* Pods-SNSCore-UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C0561398D39DA7B66F1A6E28 /* Pods-SNSCore-UIKit-acknowledgements.markdown */,
+				6DDBE66E7079E9C131053367 /* Pods-SNSCore-UIKit-acknowledgements.plist */,
+				1266836D76B786BE751B10AD /* Pods-SNSCore-UIKit-dummy.m */,
+				B4E743FB1E9558F8EA464C1D /* Pods-SNSCore-UIKit-environment.h */,
+				451E2DB2546F37CA5362FCE2 /* Pods-SNSCore-UIKit-resources.sh */,
+				86CE7B7D0C78F045DC2A0AB4 /* Pods-SNSCore-UIKit.debug.xcconfig */,
+				E423E5FE9670C3179350568C /* Pods-SNSCore-UIKit.release.xcconfig */,
+			);
+			name = "Pods-SNSCore-UIKit";
+			path = "Target Support Files/Pods-SNSCore-UIKit";
+			sourceTree = "<group>";
+		};
+		5A2353446096DF9DBC0B10DF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01073E762821F58BCED9D714 /* Pods-SNSCore-UIKit-SNSCore-UIKit.xcconfig */,
+				226EF5DBA4C816502799C0D1 /* Pods-SNSCore-UIKit-SNSCore-UIKit-Private.xcconfig */,
+				E1BC89477F4921A70C29A840 /* Pods-SNSCore-UIKit-SNSCore-UIKit-dummy.m */,
+				0E070350D4C24B010C10E23B /* Pods-SNSCore-UIKit-SNSCore-UIKit-prefix.pch */,
+				B599E1865FC7796A32F8918D /* Pods-Tests-SNSCore-UIKit.xcconfig */,
+				C847FEB6DB77102EF6DBC668 /* Pods-Tests-SNSCore-UIKit-Private.xcconfig */,
+				D908F1B1218C1EED83E0C942 /* Pods-Tests-SNSCore-UIKit-dummy.m */,
+				191F897C7086EB56251D933D /* Pods-Tests-SNSCore-UIKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-SNSCore-UIKit-SNSCore-UIKit";
+			sourceTree = "<group>";
+		};
+		B169E3FD1AF6320F00B9B6BF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B169E3FE1AF6320F00B9B6BF /* UIView+SNSCoreUIKit.h */,
+				B169E3FF1AF6320F00B9B6BF /* UIView+SNSCoreUIKit.m */,
+			);
+			name = Categories;
+			path = Pod/Categories;
+			sourceTree = "<group>";
+		};
+		D9DF15FDDF622AA40C1FEBDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A2405F05F0D88F58A1BDA89 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E15C95DCED49FD7256064B84 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ED84EBF0774DFC2A37E80E2 /* Pods-SNSCore-UIKit */,
+				495C5B4C09895F17D4DE0728 /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BA4905302E8C7547FFBBA0F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA78660B4B8B515002FA9D6 /* SNSDropListView.h in Headers */,
+				6C4E4CBA940748CEB333699E /* SNSDropListViewCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D07F972026F1BC24125CDEA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D775A7DDB81C43CC9FD3733B /* SNSDropListView.h in Headers */,
+				86487AFD2A51863FCEB5EC85 /* SNSDropListViewCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		17FC5512132F34919DC435AA /* SNSCore-UIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3DC32BE055B1308F24D2446 /* Build configuration list for PBXNativeTarget "SNSCore-UIKit" */;
+			buildPhases = (
+				C9612B542539C5E550B208D2 /* Sources */,
+				60CA299A0060384711C0CF74 /* Frameworks */,
+				34BFE44A3E74E1DABA12478A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SNSCore-UIKit";
+			productName = "SNSCore-UIKit";
+			productReference = 531F21D1FEC71767E8136DE1 /* SNSCore-UIKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4E639DA9A0CFFF1F07A562B6 /* Pods-Tests-SNSCore-UIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6911DAAFC6B5441FAA1410CF /* Build configuration list for PBXNativeTarget "Pods-Tests-SNSCore-UIKit" */;
+			buildPhases = (
+				CF7916D723A53F9470DE70C1 /* Sources */,
+				7DEBB10D98B838B5F7C73195 /* Frameworks */,
+				4BA4905302E8C7547FFBBA0F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24BA01721A3AC65C94BCAF8D /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests-SNSCore-UIKit";
+			productName = "Pods-Tests-SNSCore-UIKit";
+			productReference = 41632004363968D17ECCC030 /* libPods-Tests-SNSCore-UIKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		86E36DE776739C98920CAB48 /* Pods-SNSCore-UIKit-SNSCore-UIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 072C65A1F852502C330AB4A2 /* Build configuration list for PBXNativeTarget "Pods-SNSCore-UIKit-SNSCore-UIKit" */;
+			buildPhases = (
+				BE2E975E2816A3A5164FD486 /* Sources */,
+				71AEAA1C59538E33288B56D9 /* Frameworks */,
+				D07F972026F1BC24125CDEA9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A9086AE4369CD57759EB6DD /* PBXTargetDependency */,
+			);
+			name = "Pods-SNSCore-UIKit-SNSCore-UIKit";
+			productName = "Pods-SNSCore-UIKit-SNSCore-UIKit";
+			productReference = 7F942830066B889F6AF72051 /* libPods-SNSCore-UIKit-SNSCore-UIKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9B3F3BF295D980F529670017 /* Pods-SNSCore-UIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86D4AE8DEAA39E200EE0831 /* Build configuration list for PBXNativeTarget "Pods-SNSCore-UIKit" */;
+			buildPhases = (
+				E2DAF694A73495E98CC15C9B /* Sources */,
+				CF6DBBF56C753B3CDD5DFED0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54DF4272556C4F156008742D /* PBXTargetDependency */,
+			);
+			name = "Pods-SNSCore-UIKit";
+			productName = "Pods-SNSCore-UIKit";
+			productReference = 132CDE212204101C7904FA24 /* libPods-SNSCore-UIKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E4AEDBFDFB73BFDA884A5C6A /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA2A558555E4969AC939DE3E /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				BAA0B76460DB012E15AC3A23 /* Sources */,
+				DB2176240F3666D1B05D731F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				386DD27B391B67C5DE44F392 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = 6341D019A64A5A0501482B7C /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		892E6F17F8AD143B8E63B98A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = A3418F19BDD760288ADC5A12 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B964CF5884FC0DD0E8B412E;
+			productRefGroup = 318BF421DA25E0297C4B2FC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B3F3BF295D980F529670017 /* Pods-SNSCore-UIKit */,
+				86E36DE776739C98920CAB48 /* Pods-SNSCore-UIKit-SNSCore-UIKit */,
+				E4AEDBFDFB73BFDA884A5C6A /* Pods-Tests */,
+				4E639DA9A0CFFF1F07A562B6 /* Pods-Tests-SNSCore-UIKit */,
+				17FC5512132F34919DC435AA /* SNSCore-UIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34BFE44A3E74E1DABA12478A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAA0B76460DB012E15AC3A23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02ADACB00BEF07A4A116EFF2 /* Pods-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2E975E2816A3A5164FD486 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9AC383FD5818056A5644316 /* Pods-SNSCore-UIKit-SNSCore-UIKit-dummy.m in Sources */,
+				5A7367FBAF6D3D1C916E03A7 /* SNSDropListView.m in Sources */,
+				16E2347029C7082EF4DE880A /* SNSDropListViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9612B542539C5E550B208D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7916D723A53F9470DE70C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828BFBAEC9B086B485450632 /* Pods-Tests-SNSCore-UIKit-dummy.m in Sources */,
+				556073960856125278008115 /* SNSDropListView.m in Sources */,
+				344001D21E8F18AABBC3FD81 /* SNSDropListViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DAF694A73495E98CC15C9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DDEEDC4219326E296BB0AA6 /* Pods-SNSCore-UIKit-dummy.m in Sources */,
+				B169E4001AF6320F00B9B6BF /* UIView+SNSCoreUIKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A9086AE4369CD57759EB6DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SNSCore-UIKit";
+			target = 17FC5512132F34919DC435AA /* SNSCore-UIKit */;
+			targetProxy = 2259C9EE4F57DD823F1CCBA7 /* PBXContainerItemProxy */;
+		};
+		24BA01721A3AC65C94BCAF8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SNSCore-UIKit";
+			target = 17FC5512132F34919DC435AA /* SNSCore-UIKit */;
+			targetProxy = EFE3BF75E1B820FE573C534F /* PBXContainerItemProxy */;
+		};
+		386DD27B391B67C5DE44F392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-SNSCore-UIKit";
+			target = 4E639DA9A0CFFF1F07A562B6 /* Pods-Tests-SNSCore-UIKit */;
+			targetProxy = 79422EC7006EADB906DFD198 /* PBXContainerItemProxy */;
+		};
+		54DF4272556C4F156008742D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SNSCore-UIKit-SNSCore-UIKit";
+			target = 86E36DE776739C98920CAB48 /* Pods-SNSCore-UIKit-SNSCore-UIKit */;
+			targetProxy = E5880D5CD45F35916D76839B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32AD5EA55FA6C00EB37BEA99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226EF5DBA4C816502799C0D1 /* Pods-SNSCore-UIKit-SNSCore-UIKit-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SNSCore-UIKit-SNSCore-UIKit/Pods-SNSCore-UIKit-SNSCore-UIKit-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3B37A6C2EC2694A9ED3CBF95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C389078567FD37A2CD618E8A /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5CF5C227AB02A6BA36B1B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C847FEB6DB77102EF6DBC668 /* Pods-Tests-SNSCore-UIKit-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-SNSCore-UIKit/Pods-Tests-SNSCore-UIKit-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6D6D0B0F79ACC7B2FE006FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7057C0383BBC64EF388FA4A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEEE5B6271EE5CF8CCC850AA /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BC21844729332CB7AFC6221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B56E9B0FF615A21212F30CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C847FEB6DB77102EF6DBC668 /* Pods-Tests-SNSCore-UIKit-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-SNSCore-UIKit/Pods-Tests-SNSCore-UIKit-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD0E9F5A16630701533D78A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E423E5FE9670C3179350568C /* Pods-SNSCore-UIKit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0A552697D4B16A26C0055D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226EF5DBA4C816502799C0D1 /* Pods-SNSCore-UIKit-SNSCore-UIKit-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SNSCore-UIKit-SNSCore-UIKit/Pods-SNSCore-UIKit-SNSCore-UIKit-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D784B2AB1ACC9ED6CC0F4394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86CE7B7D0C78F045DC2A0AB4 /* Pods-SNSCore-UIKit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E316B6E6DFEEF68B39BB8F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		E5762E0B219E407D857699E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		072C65A1F852502C330AB4A2 /* Build configuration list for PBXNativeTarget "Pods-SNSCore-UIKit-SNSCore-UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AD5EA55FA6C00EB37BEA99 /* Debug */,
+				D0A552697D4B16A26C0055D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6911DAAFC6B5441FAA1410CF /* Build configuration list for PBXNativeTarget "Pods-Tests-SNSCore-UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF5C227AB02A6BA36B1B0B5 /* Debug */,
+				B56E9B0FF615A21212F30CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3418F19BDD760288ADC5A12 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E316B6E6DFEEF68B39BB8F80 /* Debug */,
+				6D6D0B0F79ACC7B2FE006FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86D4AE8DEAA39E200EE0831 /* Build configuration list for PBXNativeTarget "Pods-SNSCore-UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D784B2AB1ACC9ED6CC0F4394 /* Debug */,
+				CD0E9F5A16630701533D78A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA2A558555E4969AC939DE3E /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B37A6C2EC2694A9ED3CBF95 /* Debug */,
+				7057C0383BBC64EF388FA4A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3DC32BE055B1308F24D2446 /* Build configuration list for PBXNativeTarget "SNSCore-UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC21844729332CB7AFC6221 /* Debug */,
+				E5762E0B219E407D857699E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 892E6F17F8AD143B8E63B98A /* Project object */;
+}
