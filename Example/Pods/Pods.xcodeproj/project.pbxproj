@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		06107804AE17C17C7133AD9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF643C3270D65A37A319E2A /* Foundation.framework */; };
-		12702A361AD81D850006966B /* SNSDropListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12702A351AD81D850006966B /* SNSDropListView.m */; };
-		12702A391AD81DFE0006966B /* SNSDropListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 12702A381AD81DFE0006966B /* SNSDropListViewCell.m */; };
 		216578E8C5589C6CF16953AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF643C3270D65A37A319E2A /* Foundation.framework */; };
 		2A9C06E964E2B440F2DE9117 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE006FC65C55A34842313B16 /* Pods-Tests-dummy.m */; };
 		4EB897C93AFFC1BD07EEEFEC /* Pods-SNSCoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 703DDBABA50348B481368DAC /* Pods-SNSCoreKit-dummy.m */; };
+		B1CE49F41AF6191300FE281A /* SNSDropListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CE49F11AF6191300FE281A /* SNSDropListView.m */; };
+		B1CE49F51AF6191300FE281A /* SNSDropListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CE49F31AF6191300FE281A /* SNSDropListViewCell.m */; };
+		B1CE49F91AF6196400FE281A /* UIView+SNSCoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CE49F81AF6196400FE281A /* UIView+SNSCoreKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12702A341AD81D850006966B /* SNSDropListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNSDropListView.h; path = Pod/Classes/SNSDropListView.h; sourceTree = "<group>"; };
-		12702A351AD81D850006966B /* SNSDropListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNSDropListView.m; path = Pod/Classes/SNSDropListView.m; sourceTree = "<group>"; };
-		12702A371AD81DFE0006966B /* SNSDropListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNSDropListViewCell.h; path = Pod/Classes/SNSDropListViewCell.h; sourceTree = "<group>"; };
-		12702A381AD81DFE0006966B /* SNSDropListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNSDropListViewCell.m; path = Pod/Classes/SNSDropListViewCell.m; sourceTree = "<group>"; };
 		2DF643C3270D65A37A319E2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4156CCE45BCFEC14AADE92DA /* Pods-SNSCoreKit-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SNSCoreKit-environment.h"; sourceTree = "<group>"; };
 		475C7E9829C77182CF1B596C /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +45,13 @@
 		858178644BD8547407272D85 /* Pods-SNSCoreKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNSCoreKit.release.xcconfig"; sourceTree = "<group>"; };
 		925EBF59D90AE458E7C0F5F6 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AA861E1EBBA344F36C3C560C /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1CE49EF1AF6191300FE281A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B1CE49F01AF6191300FE281A /* SNSDropListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSDropListView.h; sourceTree = "<group>"; };
+		B1CE49F11AF6191300FE281A /* SNSDropListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSDropListView.m; sourceTree = "<group>"; };
+		B1CE49F21AF6191300FE281A /* SNSDropListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSDropListViewCell.h; sourceTree = "<group>"; };
+		B1CE49F31AF6191300FE281A /* SNSDropListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSDropListViewCell.m; sourceTree = "<group>"; };
+		B1CE49F71AF6196400FE281A /* UIView+SNSCoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SNSCoreKit.h"; sourceTree = "<group>"; };
+		B1CE49F81AF6196400FE281A /* UIView+SNSCoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SNSCoreKit.m"; sourceTree = "<group>"; };
 		BEDA8AEDA3628C814C310A3F /* Pods-SNSCoreKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNSCoreKit-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EE006FC65C55A34842313B16 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
 		F2FBB90D7900C431E6F89FCF /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -161,10 +165,8 @@
 		8FA3F5558FD260D672972380 /* SNSCoreKit */ = {
 			isa = PBXGroup;
 			children = (
-				12702A341AD81D850006966B /* SNSDropListView.h */,
-				12702A351AD81D850006966B /* SNSDropListView.m */,
-				12702A371AD81DFE0006966B /* SNSDropListViewCell.h */,
-				12702A381AD81DFE0006966B /* SNSDropListViewCell.m */,
+				B1CE49F61AF6192600FE281A /* Categories */,
+				B1CE49EE1AF6191300FE281A /* Classes */,
 			);
 			name = SNSCoreKit;
 			path = ../..;
@@ -177,6 +179,29 @@
 				876B663AC3A06D8D04EEE8D7 /* Pods-Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B1CE49EE1AF6191300FE281A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B1CE49EF1AF6191300FE281A /* .gitkeep */,
+				B1CE49F01AF6191300FE281A /* SNSDropListView.h */,
+				B1CE49F11AF6191300FE281A /* SNSDropListView.m */,
+				B1CE49F21AF6191300FE281A /* SNSDropListViewCell.h */,
+				B1CE49F31AF6191300FE281A /* SNSDropListViewCell.m */,
+			);
+			name = Classes;
+			path = "SNSCore-UIKit/Classes";
+			sourceTree = "<group>";
+		};
+		B1CE49F61AF6192600FE281A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B1CE49F71AF6196400FE281A /* UIView+SNSCoreKit.h */,
+				B1CE49F81AF6196400FE281A /* UIView+SNSCoreKit.m */,
+			);
+			name = Categories;
+			path = "SNSCore-UIKit/Categories";
 			sourceTree = "<group>";
 		};
 		B5283EB029B30C881CC2EDA2 /* Products */ = {
@@ -311,9 +336,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12702A361AD81D850006966B /* SNSDropListView.m in Sources */,
-				12702A391AD81DFE0006966B /* SNSDropListViewCell.m in Sources */,
+				B1CE49F41AF6191300FE281A /* SNSDropListView.m in Sources */,
+				B1CE49F51AF6191300FE281A /* SNSDropListViewCell.m in Sources */,
 				4EB897C93AFFC1BD07EEEFEC /* Pods-SNSCoreKit-dummy.m in Sources */,
+				B1CE49F91AF6196400FE281A /* UIView+SNSCoreKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

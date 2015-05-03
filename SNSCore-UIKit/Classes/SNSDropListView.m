@@ -7,6 +7,7 @@
 //
 
 #import "SNSDropListView.h"
+#import "UIView+SNSCoreKit.h"
 
 
 #pragma mark - Constants
@@ -174,7 +175,7 @@ static CGFloat const kSnSDropListLabelDefaulttHeight = 30.f;
     if ([self.delegate respondsToSelector:@selector(didTapDropListView:)])
         [self.delegate didTapDropListView:self];
     
-    if (SnSViewH(self.scrollView) == 0)
+    if (self.scrollView.frame.size.height == 0)
         [self openScrollView];
     else
         [self closeScrollView];
@@ -430,7 +431,7 @@ static CGFloat const kSnSDropListLabelDefaulttHeight = 30.f;
 -(void)setMainLabelFont:(UIFont *)mainLabelFont
 {
     self.mainLabelFont = nil;
-    self.mainLabel.font = self.mainLabelFont
+    self.mainLabel.font = self.mainLabelFont;
 }
 
 -(void)defaultMainLabel
