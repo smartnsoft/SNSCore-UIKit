@@ -11,11 +11,7 @@
 @implementation UIView (SNSCoreUIKit)
 
 #pragma mark - Recursively methods
-/**
- * @abstract
- *  Recursively checks all superview of caller view until nil is found.
- *  The last non nil view is then returned
- */
+
 - (UIView*)rootview
 {
     if (self.superview == nil)
@@ -24,11 +20,6 @@
     return [self.superview rootview];
 }
 
-/**
- * @abstract
- *  Recursively checks all superview of caller view until iclass is found.
- *  If the class is not found, nil is returned instead
- */
 - (UIView *)superviewOfClass:(Class)iclass
 {
     if ([self isKindOfClass:iclass])
@@ -40,13 +31,6 @@
     return [self.superview superviewOfClass:iclass];
 }
 
-/**
- * @abstract
- *  Goes through all the subviews and will automatically call NSLocalizedString with the text set.
- * @discussion
- *  This is very useful when using XIB files because you only have to put the keys inside labels/buttons...
- *  and one call to this selector on the main will localize everything.
- */
 - (void)localizeRecursively
 {
     for (UIView* v in [self subviews])
@@ -72,11 +56,6 @@
     }
 }
 
-/**
- * @warning
- *  This method is recursive and will add all subviews, subviews objects the class
- *  passed in parameter
- */
 - (NSArray *)subviewsOfClass:(Class)iClass
 {
     NSMutableArray* array = [NSMutableArray arrayWithCapacity:self.subviews.count];
@@ -93,10 +72,6 @@
     return [NSArray arrayWithArray:array];
 }
 
-/**
- * @abstract
- *  Apply a given block recursively to all subviews
- */
 - (void)applyBlockRecursively:(void (^)(id))block stop:(BOOL *)stop
 {
     if (stop != NULL && *stop == YES)
@@ -109,7 +84,7 @@
 }
 
 #pragma mark - Animations
-// TODO: Check if this method is still useful
+
 - (void)animateWithBounceEffect
 {
     self.alpha = 0;
@@ -130,13 +105,6 @@
     self.layer.transform = CATransform3DIdentity;
 }
 
-/**
- *  This method allows to fade in / fade out a UIView smoothly
- *
- *  @param initialAlpha The initial alpha before the animation starts
- *  @param finalAlpha   The final alpha when the animations finishes
- *  @param duration     The animation duration in seconds 
- */
 -(void)fadeFromInitialAlpha:(CGFloat)initialAlpha finalAlpha:(CGFloat)finalAlpha andDuration:(NSTimeInterval)duration
 {
     [self setAlpha:initialAlpha];
@@ -147,13 +115,7 @@
 }
 
 #pragma mark - Customs shape view
-/**
- *  Cut the side of the view
- *
- *  @param sideToCut The view side to cut
- *
- *  @return A layer mask to apply to the view
- */
+
 - (void) cutSide:(CutterViewSideType)sideToCut
 {
     CGRect bounds = self.bounds;
@@ -191,12 +153,6 @@
     self.layer.mask = maskLayer;
 }
 
-/**
- *  Add Rounded Corners to a UIView
- *
- *  @param corners The corners in which to apply changes
- *  @param size    The size of the radius
- */
 - (void)setRoundedCorners:(UIRectCorner)corners radius:(CGSize)size
 {
     UIBezierPath* maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:size];
@@ -207,5 +163,20 @@
     
     self.layer.mask = maskLayer;
 }
+
+- (void)addInContainerView:(UIView*)containerView edgeInsets:(UIEdgeInsets)edgeInsets
+{
+    [containerView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self addSubview:containerView];
+    
+    
+    NSString *hConstraint = [NSString stringWithFormat:@"H:|-%f-[containerView]-%f-|", edgeInsets.left, edgeInsets.right];
+    NSString *vConstraint = [NSString stringWithFormat:@"V:|-%f-[containerView]-%f-|", edgeInsets.top, edgeInsets.bottom];
+    
+    [self addConstraints:ConstraintsWithVisualFormatAndViews(hConstraint, containerView)];
+    [self addConstraints:ConstraintsWithVisualFormatAndViews(vConstraint, containerView)];
+}
+
+
 
 @end
