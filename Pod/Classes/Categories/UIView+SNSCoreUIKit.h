@@ -20,6 +20,69 @@ typedef NS_ENUM(NSUInteger, CutterViewSideType)
 @interface UIView (SNSCoreUIKit)
 
 /**
+ * Commodity accessor for `frame.origin.x`
+ *
+ * Sets frame.origin.x = roundf(left)
+ */
+@property(nonatomic) CGFloat left;
+
+/**
+ * Commodity accessor for `frame.origin.y`
+ *
+ * Sets frame.origin.y = roundf(top)
+ */
+@property(nonatomic) CGFloat top;
+
+/**
+ * Commodity accessor for `frame.origin.x + frame.size.width`
+ *
+ * Sets frame.origin.x = roundf(right - frame.size.width)
+ */
+@property(nonatomic) CGFloat right;
+
+/**
+ * Commodity accessor for `frame.origin.y + frame.size.height`
+ *
+ * Sets frame.origin.y = roundf(bottom - frame.size.height)
+ */
+@property(nonatomic) CGFloat bottom;
+
+/**
+ * Commodity accessor for `frame.size.width`
+ *
+ * Sets frame.size.width = roundf(width)
+ * @warning If your view's transform is not identity, you should use boundsWidth
+ */
+@property(nonatomic) CGFloat width;
+
+/**
+ * Commodity accessor for `frame.size.height`
+ *
+ * Sets frame.size.height = roundf(height)
+ * @warning If your view's transform is not identity, you should use boundsHeight
+ */
+@property(nonatomic) CGFloat height;
+
+/**
+ * Commodity accessor for `center.x`
+ *
+ * Sets center.x = roundf(centerX)
+ */
+@property(nonatomic) CGFloat centerX;
+
+/**
+ * Commodity accessor for `center.y`
+ *
+ * Sets center.y = roundf(centerY)
+ */
+@property(nonatomic) CGFloat centerY;
+
+/**
+ * Commodity accessor for `frame.size`
+ */
+@property(nonatomic) CGSize size;
+
+/**
  * @abstract
  *  Recursively checks all superview of caller view until nil is found.
  *  The last non nil view is then returned
