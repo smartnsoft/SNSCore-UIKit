@@ -22,10 +22,5 @@
       "Pod/Assets/*.png"
     ]
   },
-  "frameworks": "UIKit",
-  "dependencies": {
-    "Colours": [
-      "~> 5.6"
-    ]
-  }
+  "frameworks": "UIKit"
 }

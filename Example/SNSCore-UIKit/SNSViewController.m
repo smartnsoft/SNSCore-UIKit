@@ -8,7 +8,7 @@
 
 #import "SNSViewController.h"
 #import <SNSCore-UIKit/UIView+SNSCoreUIKit.h>
-#import "Colours.h"
+#import <SNSCore-UIKit/UIColor+SNSCoreUIKit.h>
 
 @interface SNSViewController ()
 
@@ -23,7 +23,7 @@
     
     // DropListView Example
     SNSDropListView * dropListView = [[SNSDropListView alloc] initWithFrame:self.view.frame];
-    [dropListView setBackgroundColor:[UIColor colorFromHexString:@"#f587e4"]];
+    [dropListView setBackgroundColor:[UIColor colorFromHexa:@"#f587e4"]];
     [dropListView setDelegate:self];
     [dropListView setDataSource:self];
     [dropListView cutSide:CutterViewSideTypeLeft];
@@ -32,7 +32,7 @@
     
     // Rounded View Example
     UIView * roundedView = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 200, 200)];
-    [roundedView setBackgroundColor:[UIColor colorFromHexString:@"538535"]];
+    [roundedView setBackgroundColor:[UIColor colorFromHexa:@"538535"]];
     [roundedView setRoundedCorners:UIRectCornerAllCorners radius:CGSizeMake(50, 50)];
     [dropListView addSubview:roundedView];
     
@@ -44,7 +44,7 @@
 - (SNSDropListViewCell*)dropList:(SNSDropListView*)iDropList cellForRow:(NSInteger)iRow
 {
     SNSDropListViewCell * dropListViewCell = [[SNSDropListViewCell alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 100)];
-    [dropListViewCell setBackgroundColor:[UIColor colorFromHexString:@"#663482"]];
+    [dropListViewCell setBackgroundColor:[UIColor colorFromHexa:@"#663482"]];
     return dropListViewCell;
 }
 

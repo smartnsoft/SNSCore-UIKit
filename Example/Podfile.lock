@@ -1,7 +1,5 @@
 PODS:
-  - Colours (5.6.2)
-  - SNSCore-UIKit (0.1.0):
-    - Colours (~> 5.6)
+  - SNSCore-UIKit (0.1.0)
 
 DEPENDENCIES:
   - SNSCore-UIKit (from `../`)
@@ -11,7 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Colours: 0afd4c3429656880fd4cff350ca3bf0ab86ca348
-  SNSCore-UIKit: 533b47cebe77ada9d2b51baa3e0910d874821372
+  SNSCore-UIKit: 1db095beca3248e29ef8d50fa11c84c313d529bd
 
-COCOAPODS: 0.36.4
+COCOAPODS: 0.37.1
