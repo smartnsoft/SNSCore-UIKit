@@ -153,6 +153,6 @@ typedef NS_ENUM(NSUInteger, CutterViewSideType)
  @param subview The parent view which embed your view
  @param edgeInsets UIEdgeInsets for the child view according to the parent
  */
-- (void)addInContainerView:(UIView*)containerView edgeInsets:(UIEdgeInsets)edgeInsets;
+- (void)addFillView:(UIView*)view withInsets:(UIEdgeInsets)edgeInsets;
 
 @end

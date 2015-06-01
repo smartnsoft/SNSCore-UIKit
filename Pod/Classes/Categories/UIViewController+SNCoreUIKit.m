@@ -31,7 +31,7 @@
         UIView* childView = viewController.view;
         
         [self addChildViewController:viewController];
-        [container addInContainerView:childView edgeInsets:edgeInsets];
+        [container addFillView:childView withInsets:edgeInsets];
         [viewController didMoveToParentViewController:self];
         
     }
@@ -47,7 +47,7 @@
     [self addChildViewController:toViewController];
     
     UIView *childView = toViewController.view;
-    [container addInContainerView:childView edgeInsets:UIEdgeInsetsZero];
+    [container addFillView:childView withInsets:UIEdgeInsetsZero];
     
     CGFloat animationDuration = animated ? 0.35 : 0;
     

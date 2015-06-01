@@ -278,17 +278,17 @@
     self.layer.mask = maskLayer;
 }
 
-- (void)addInContainerView:(UIView*)containerView edgeInsets:(UIEdgeInsets)edgeInsets
+- (void)addFillView:(UIView*)view withInsets:(UIEdgeInsets)edgeInsets
 {
-    [containerView setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self addSubview:containerView];
+    [view setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self addSubview:view];
     
     
     NSString *hConstraint = [NSString stringWithFormat:@"H:|-%f-[containerView]-%f-|", edgeInsets.left, edgeInsets.right];
     NSString *vConstraint = [NSString stringWithFormat:@"V:|-%f-[containerView]-%f-|", edgeInsets.top, edgeInsets.bottom];
     
-    [self addConstraints:ConstraintsWithVisualFormatAndViews(hConstraint, containerView)];
-    [self addConstraints:ConstraintsWithVisualFormatAndViews(vConstraint, containerView)];
+    [self addConstraints:ConstraintsWithVisualFormatAndViews(hConstraint, view)];
+    [self addConstraints:ConstraintsWithVisualFormatAndViews(vConstraint, view)];
 }
 
 
