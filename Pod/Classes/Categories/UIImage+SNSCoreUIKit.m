@@ -29,4 +29,34 @@
     return newImage;
 }
 
+
++ (NSString *)documentsPathForFileName:(NSString *)name
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0];
+    return [documentsPath stringByAppendingPathComponent:name];
+}
+
++ (NSString *)saveImage:(UIImage*)image withName:(NSString*)name
+{
+    if (image != nil)
+    {
+        NSString* path = [UIImage documentsPathForFileName:name];
+        NSData* data = UIImageJPEGRepresentation(image, 0.8);
+        [data writeToFile:path atomically:YES];
+        return path;
+    }
+    return @"";
+}
+
++ (void)removeImage:(NSString *)filePath
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    BOOL success = [fileManager removeItemAtPath:filePath error:&error];
+    if (!success)
+    {
+        [UIImage removeImage:filePath];
+    }
+}
 @end

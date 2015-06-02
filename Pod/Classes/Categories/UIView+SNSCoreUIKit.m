@@ -145,6 +145,7 @@
     return [self.superview superviewOfClass:iclass];
 }
 
+#pragma mark - Recursively Methods
 - (void)localizeRecursively
 {
     for (UIView* v in [self subviews])
@@ -167,6 +168,15 @@
         }
         
         [v localizeRecursively];
+    }
+}
+
+- (void) showOrHideViewsRecursively:(BOOL)mustShow
+{
+    for (UIView* v in [self subviews])
+    {
+        [v setHidden:mustShow];
+        [v hideViewsRecursively];
     }
 }
 

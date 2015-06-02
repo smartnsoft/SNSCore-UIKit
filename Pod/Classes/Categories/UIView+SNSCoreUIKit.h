@@ -155,4 +155,12 @@ typedef NS_ENUM(NSUInteger, CutterViewSideType)
  */
 - (void)addFillView:(UIView*)view withInsets:(UIEdgeInsets)edgeInsets;
 
+
+/**
+ *  Show or hide all subviews of a view
+ *
+ *  @param mustShow Defines if the method must show or hide all subviews
+ */
+- (void) showOrHideViewsRecursively:(BOOL)mustShow;
+
 @end
