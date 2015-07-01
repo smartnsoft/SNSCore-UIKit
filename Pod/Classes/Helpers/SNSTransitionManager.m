@@ -42,7 +42,7 @@ const CGFloat kWidthRatioIpad = 3.0;
 {
     if (self.transitionDuration)
         return self.transitionDuration;
-
+    
     return 1.0;
 }
 
@@ -51,10 +51,6 @@ const CGFloat kWidthRatioIpad = 3.0;
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
     UIView *container = [transitionContext containerView];
-    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    CGRect sourceRect = [transitionContext initialFrameForViewController:fromVC];
-    
     
     // Set background view if Needed
     [self insertBackgroundViewInContainer:container];
@@ -67,124 +63,22 @@ const CGFloat kWidthRatioIpad = 3.0;
     {
         case SNSTransitionTypeRightToLeft:
         {
-            // Insert the toVC view
-            [toVC.view setFrame:CGRectMake(sourceRect.size.width, 0, sourceRect.size.width, sourceRect.size.height)];
-            
-            [container insertSubview:toVC.view aboveSubview:fromVC.view];
-            
-            [UIView animateWithDuration:1.0
-                                  delay:0.0
-                 usingSpringWithDamping:.8
-                  initialSpringVelocity:6.0
-                                options:UIViewAnimationOptionCurveEaseIn
-             
-                             animations:^{
-     
-                                 [toVC.view setTransform:CGAffineTransformMakeTranslation(-toVC.view.frame.size.width, 0)];
-                                 
-                             } completion:^(BOOL finished) {
-                                 
-                                 //When the animation is completed call completeTransition
-                                 [transitionContext completeTransition:YES];
-                             }];
+            [self rightToLeftAnimationWithContext:transitionContext];
             break;
         }
         case SNSTransitionTypeLeftToRight:
         {
-            [UIView animateWithDuration:1.0
-                                  delay:0.0
-                 usingSpringWithDamping:1
-                  initialSpringVelocity:0.1
-                                options:UIViewAnimationOptionCurveEaseIn
-             
-                             animations:^{
-                                 
-                                 // Move the view off the screen
-                                 [fromVC.view setTransform:CGAffineTransformMakeTranslation(fromVC.view.frame.size.width, 0)];
-                                 
-                             } completion:^(BOOL finished) {
-                                 //When the animation is completed call completeTransition
-                                 [transitionContext completeTransition:YES];
-                             }];
+            [self leftToRightAnimationWithContext:transitionContext];
             break;
         }
         case SNSTransitionTypeAirShow:
         {
-            [container insertSubview:toVC.view aboveSubview:fromVC.view];
-            
-            [UIView animateWithDuration:1.0
-                                  delay:0.0
-                 usingSpringWithDamping:.8
-                  initialSpringVelocity:6.0
-                                options:UIViewAnimationOptionCurveEaseIn
-             
-                             animations:^{
-                                 
-                                 CALayer *layer = fromVC.view.layer;
-                                 CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
-                                 rotationAndPerspectiveTransform.m34 = kM34Perspective;
-                                 rotationAndPerspectiveTransform = CATransform3DScale(rotationAndPerspectiveTransform, 0.5, 0.5, 1.0);
-                                 
-                                 if (UI_USER_INTERFACE_IDIOM() ==  UIUserInterfaceIdiomPad)
-                                 {
-                                     [toVC.view setFrame:CGRectMake(sourceRect.size.width - sourceRect.size.width/kWidthRatioIpad, 0, sourceRect.size.width/kWidthRatioIpad, sourceRect.size.height)];
-                                     rotationAndPerspectiveTransform = CATransform3DTranslate(rotationAndPerspectiveTransform, -sourceRect.size.width/kWidthRatioIpad + kMargin, 0, kZTranslate*2);
-                                     rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform, kRotationIpad * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
-                                 }
-                                 else
-                                 {
-                                     [toVC.view setFrame:CGRectMake(sourceRect.size.width - sourceRect.size.width/kWidthRatio, 0, sourceRect.size.width/kWidthRatio, sourceRect.size.height)];
-                                     rotationAndPerspectiveTransform = CATransform3DTranslate(rotationAndPerspectiveTransform, -sourceRect.size.width + kMargin, 0, kZTranslate);
-                                     rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform, kRotation * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
-                                 }
-                                 
-                                 layer.transform = rotationAndPerspectiveTransform;
-                                 
-                             } completion:^(BOOL finished) {
-                                 
-                                 //When the animation is completed call completeTransition
-                                 
-                                 UIView *dismissView;
-                                 
-                                 if (UI_USER_INTERFACE_IDIOM() ==  UIUserInterfaceIdiomPad)
-                                 {
-                                     dismissView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, sourceRect.size.width - sourceRect.size.width/kWidthRatioIpad, sourceRect.size.height)];
-                                 }
-                                 else
-                                 {
-                                     dismissView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, sourceRect.size.width - sourceRect.size.width/kWidthRatio, sourceRect.size.height)];
-                                 }
-                                 
-                                 
-                                 UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissAirController)];
-                                 [dismissView addGestureRecognizer:tapGestureRecognizer];
-                                 [container addSubview:dismissView];
-                                 self.currentAirController = toVC;
-                                 
-                                 [transitionContext completeTransition:YES];
-                             }];
+            [self airShowAnimationWithContext:transitionContext];
             break;
         }
         case SNSTransitionTypeAirDimiss:
         {
-            [UIView animateWithDuration:1.0
-                                  delay:0.0
-                 usingSpringWithDamping:.8
-                  initialSpringVelocity:6.0
-                                options:UIViewAnimationOptionCurveEaseIn
-             
-                             animations:^{
-                                 
-                                 CATransform3D resetTransform = CATransform3DIdentity;
-                                 toVC.view.layer.transform = resetTransform;
-                                 [fromVC.view setTransform:CGAffineTransformMakeTranslation(fromVC.view.frame.size.width, 0)];
-                                 [self.backgroundView fadeFromInitialAlpha:self.backgroundView.alpha finalAlpha:0.0 andDuration:0.2];
-                                 
-                             } completion:^(BOOL finished) {
-                                 
-                                 //When the animation is completed call completeTransition
-                                 [transitionContext completeTransition:YES];
-                             }];
+            [self airDismissAnimationWithContext:transitionContext];
             break;
         }
         default:
@@ -192,6 +86,144 @@ const CGFloat kWidthRatioIpad = 3.0;
     }
 }
 
+#pragma mark - Animations Methods
+- (void) rightToLeftAnimationWithContext:(id<UIViewControllerContextTransitioning>)transitionContext
+{
+    UIView *container = [transitionContext containerView];
+    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    CGRect sourceRect = [transitionContext initialFrameForViewController:fromVC];
+    
+    [toVC.view setFrame:CGRectMake(sourceRect.size.width, 0, sourceRect.size.width, sourceRect.size.height)];
+    
+    [container insertSubview:toVC.view aboveSubview:fromVC.view];
+    
+    [UIView animateWithDuration:1.0
+                          delay:0.0
+         usingSpringWithDamping:.8
+          initialSpringVelocity:6.0
+                        options:UIViewAnimationOptionCurveEaseIn
+     
+                     animations:^{
+                         
+                         [toVC.view setTransform:CGAffineTransformMakeTranslation(-toVC.view.frame.size.width, 0)];
+                         
+                     } completion:^(BOOL finished) {
+                         
+                         //When the animation is completed call completeTransition
+                         [transitionContext completeTransition:YES];
+                     }];
+}
+
+- (void) leftToRightAnimationWithContext:(id<UIViewControllerContextTransitioning>)transitionContext
+{
+    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    
+    [UIView animateWithDuration:1.0
+                          delay:0.0
+         usingSpringWithDamping:1
+          initialSpringVelocity:0.1
+                        options:UIViewAnimationOptionCurveEaseIn
+     
+                     animations:^{
+                         
+                         // Move the view off the screen
+                         [fromVC.view setTransform:CGAffineTransformMakeTranslation(fromVC.view.frame.size.width, 0)];
+                         
+                     } completion:^(BOOL finished) {
+                         //When the animation is completed call completeTransition
+                         [transitionContext completeTransition:YES];
+                     }];
+}
+
+- (void) airShowAnimationWithContext:(id<UIViewControllerContextTransitioning>)transitionContext
+{
+    UIView *container = [transitionContext containerView];
+    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    CGRect sourceRect = [transitionContext initialFrameForViewController:fromVC];
+    
+    [container insertSubview:toVC.view aboveSubview:fromVC.view];
+    
+    [UIView animateWithDuration:1.0
+                          delay:0.0
+         usingSpringWithDamping:.8
+          initialSpringVelocity:6.0
+                        options:UIViewAnimationOptionCurveEaseIn
+     
+                     animations:^{
+                         
+                         CALayer *layer = fromVC.view.layer;
+                         CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
+                         rotationAndPerspectiveTransform.m34 = kM34Perspective;
+                         rotationAndPerspectiveTransform = CATransform3DScale(rotationAndPerspectiveTransform, 0.5, 0.5, 1.0);
+                         
+                         if (UI_USER_INTERFACE_IDIOM() ==  UIUserInterfaceIdiomPad)
+                         {
+                             [toVC.view setFrame:CGRectMake(sourceRect.size.width - sourceRect.size.width/kWidthRatioIpad, 0, sourceRect.size.width/kWidthRatioIpad, sourceRect.size.height)];
+                             rotationAndPerspectiveTransform = CATransform3DTranslate(rotationAndPerspectiveTransform, -sourceRect.size.width/kWidthRatioIpad + kMargin, 0, kZTranslate*2);
+                             rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform, kRotationIpad * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
+                         }
+                         else
+                         {
+                             [toVC.view setFrame:CGRectMake(sourceRect.size.width - sourceRect.size.width/kWidthRatio, 0, sourceRect.size.width/kWidthRatio, sourceRect.size.height)];
+                             rotationAndPerspectiveTransform = CATransform3DTranslate(rotationAndPerspectiveTransform, -sourceRect.size.width + kMargin, 0, kZTranslate);
+                             rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform, kRotation * M_PI / 180.0f, 0.0f, 1.0f, 0.0f);
+                         }
+                         
+                         layer.transform = rotationAndPerspectiveTransform;
+                         
+                     } completion:^(BOOL finished) {
+                         
+                         //When the animation is completed call completeTransition
+                         
+                         UIView *dismissView;
+                         
+                         if (UI_USER_INTERFACE_IDIOM() ==  UIUserInterfaceIdiomPad)
+                         {
+                             dismissView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, sourceRect.size.width - sourceRect.size.width/kWidthRatioIpad, sourceRect.size.height)];
+                         }
+                         else
+                         {
+                             dismissView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, sourceRect.size.width - sourceRect.size.width/kWidthRatio, sourceRect.size.height)];
+                         }
+                         
+                         
+                         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissAirController)];
+                         [dismissView addGestureRecognizer:tapGestureRecognizer];
+                         [container addSubview:dismissView];
+                         self.currentAirController = toVC;
+                         
+                         [transitionContext completeTransition:YES];
+                     }];
+}
+
+
+- (void) airDismissAnimationWithContext:(id<UIViewControllerContextTransitioning>)transitionContext
+{
+    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    
+    [UIView animateWithDuration:1.0
+                          delay:0.0
+         usingSpringWithDamping:.8
+          initialSpringVelocity:6.0
+                        options:UIViewAnimationOptionCurveEaseIn
+     
+                     animations:^{
+                         
+                         CATransform3D resetTransform = CATransform3DIdentity;
+                         toVC.view.layer.transform = resetTransform;
+                         [fromVC.view setTransform:CGAffineTransformMakeTranslation(fromVC.view.frame.size.width, 0)];
+                         [self.backgroundView fadeFromInitialAlpha:self.backgroundView.alpha finalAlpha:0.0 andDuration:0.2];
+                         
+                     } completion:^(BOOL finished) {
+                         
+                         //When the animation is completed call completeTransition
+                         [transitionContext completeTransition:YES];
+                     }];
+
+}
 
 #pragma mark - Views Management
 - (void) insertBackgroundViewInContainer:(UIView*)container
