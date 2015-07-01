@@ -26,7 +26,7 @@
     [dropListView setBackgroundColor:[UIColor colorFromHexa:@"#f587e4"]];
     [dropListView setDelegate:self];
     [dropListView setDataSource:self];
-    [dropListView cutSide:CutterViewSideTypeLeft];
+    [dropListView cutSide:CutterViewSideTypeLeft withDiagonal:100.0f];
     [self.view addSubview:dropListView];
     
     

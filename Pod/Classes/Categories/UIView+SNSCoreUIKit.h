@@ -131,14 +131,13 @@ typedef NS_ENUM(NSUInteger, CutterViewSideType)
  */
 -(void)fadeFromInitialAlpha:(CGFloat)initialAlpha finalAlpha:(CGFloat)finalAlpha andDuration:(NSTimeInterval)duration;
 
+
 /**
  *  Cut the side of the view
  *
- *  @param sideToCut The view side to cut
- *
- *  @return A layer mask to apply to the view
+ *  @param diagonalWidth The distance that will be cut
  */
-- (void)cutSide:(CutterViewSideType)sideToCut;
+- (void) cutSide:(CutterViewSideType)sideToCut withDiagonal:(CGFloat)diagonalWidth;
 
 /**
  *  Add Rounded Corners to a UIView

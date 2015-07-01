@@ -11,7 +11,6 @@
 @implementation UIView (SNSCoreUIKit)
 
 #pragma mark - Commodity accessors / properties
-
 - (CGFloat)left
 {
     return self.frame.origin.x;
@@ -124,8 +123,7 @@
 }
 
 
-#pragma mark - Methods
-
+#pragma mark - Helper Methods
 - (UIView*)rootview
 {
     if (self.superview == nil)
@@ -176,7 +174,6 @@
     for (UIView* v in [self subviews])
     {
         [v setHidden:mustShow];
-        [v hideViewsRecursively];
     }
 }
 
@@ -208,7 +205,6 @@
 }
 
 #pragma mark - Animations
-
 - (void)animateWithBounceEffect
 {
     self.alpha = 0;
@@ -239,8 +235,7 @@
 }
 
 #pragma mark - Customs shape view
-
-- (void) cutSide:(CutterViewSideType)sideToCut
+- (void) cutSide:(CutterViewSideType)sideToCut withDiagonal:(CGFloat)diagonalWidth
 {
     CGRect bounds = self.bounds;
     CAShapeLayer *maskLayer = [CAShapeLayer layer];
@@ -253,13 +248,13 @@
     {
         case CutterViewSideTypeLeft:
             points[0] = CGPointZero;
-            points[1] = CGPointMake(50, 0);
+            points[1] = CGPointMake(diagonalWidth, 0);
             points[2] = CGPointMake(0, self.frame.size.height);
             break;
         case CutterViewSideTypeRight:
             points[0] = CGPointMake(self.frame.size.width, 0);
             points[1] = CGPointMake(self.frame.size.width, self.frame.size.height);
-            points[2] = CGPointMake(self.frame.size.width - 50, self.frame.size.height);
+            points[2] = CGPointMake(self.frame.size.width - diagonalWidth, self.frame.size.height);
             break;
         default:
             break;
@@ -270,6 +265,7 @@
     CGPathCloseSubpath(cgPath);
     
     UIBezierPath *path =  [UIBezierPath bezierPathWithCGPath:cgPath];
+    CGPathRelease(cgPath);
     [path appendPath:[UIBezierPath bezierPathWithRect:bounds]];
     maskLayer.path = path.CGPath;
     maskLayer.fillRule = kCAFillRuleEvenOdd;
@@ -288,6 +284,7 @@
     self.layer.mask = maskLayer;
 }
 
+#pragma mark - Constraints Management
 - (void)addFillView:(UIView*)view withInsets:(UIEdgeInsets)edgeInsets
 {
     [view setTranslatesAutoresizingMaskIntoConstraints:NO];
