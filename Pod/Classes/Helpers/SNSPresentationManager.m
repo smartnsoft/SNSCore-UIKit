@@ -9,27 +9,7 @@
 #import "SNSPresentationManager.h"
 
 
-@implementation SNSPresentationManager  
-
-#pragma mark - Lazy Instantiation
-- (SNSTransitionType)transitionTypeDismiss
-{
-    if (!_transitionTypeDismiss)
-    {
-        _transitionTypeDismiss = SNSTransitionTypeLeftToRight;
-    }
-    return _transitionTypeDismiss;
-}
-
-- (SNSTransitionType)transitionTypeShow
-{
-    if (!_transitionTypeShow)
-    {
-        _transitionTypeShow = SNSTransitionTypeRightToLeft;
-    }
-    return _transitionTypeShow;
-}
-
+@implementation SNSPresentationManager
 #pragma mark - Singleton
 + (instancetype)sharedInstance
 {
@@ -39,6 +19,17 @@
         sharedPresentationManager = [[self alloc] init];
     });
     return sharedPresentationManager;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self)
+    {
+        self.transitionTypeShow = SNSTransitionTypeRightToLeft;
+        self.transitionTypeDismiss = SNSTransitionTypeLeftToRight;
+    }
+    return self;
 }
 
 #pragma mark - UIViewControllerTransitioningDelegate -

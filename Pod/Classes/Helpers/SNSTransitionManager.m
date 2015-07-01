@@ -40,10 +40,7 @@ const CGFloat kWidthRatioIpad = 3.0;
 //Define the transition duration
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    if (self.transitionDuration)
-        return self.transitionDuration;
-    
-    return 1.0;
+    return self.transitionDuration;
 }
 
 
