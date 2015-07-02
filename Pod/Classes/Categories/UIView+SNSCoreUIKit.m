@@ -291,8 +291,8 @@
     [self addSubview:view];
     
     
-    NSString *hConstraint = [NSString stringWithFormat:@"H:|-%f-[containerView]-%f-|", edgeInsets.left, edgeInsets.right];
-    NSString *vConstraint = [NSString stringWithFormat:@"V:|-%f-[containerView]-%f-|", edgeInsets.top, edgeInsets.bottom];
+    NSString *hConstraint = [NSString stringWithFormat:@"H:|-%f-[view]-%f-|", edgeInsets.left, edgeInsets.right];
+    NSString *vConstraint = [NSString stringWithFormat:@"V:|-%f-[view]-%f-|", edgeInsets.top, edgeInsets.bottom];
     
     [self addConstraints:ConstraintsWithVisualFormatAndViews(hConstraint, view)];
     [self addConstraints:ConstraintsWithVisualFormatAndViews(vConstraint, view)];
