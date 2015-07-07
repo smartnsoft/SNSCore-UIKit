@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Helpers/SNSTransitionManager.h
