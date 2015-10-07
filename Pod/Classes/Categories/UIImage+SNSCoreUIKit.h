@@ -10,6 +10,14 @@
 
 @interface UIImage (SNSCoreUIKit)
 
+/**
+ *  Generates and returns a monochromed image based on a color
+ *
+ *  @param color image's color
+ *
+ *  @return an image filled with the color
+ */
++ (UIImage *)imageWithColor:(UIColor *)color;
 
 /**
  *   Transform your current UIImage with a black and white filter. <br/>
