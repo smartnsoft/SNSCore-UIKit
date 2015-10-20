@@ -22,37 +22,18 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // DropListView Example
-    SNSDropListView * dropListView = [[SNSDropListView alloc] initWithFrame:self.view.frame];
-    [dropListView setBackgroundColor:[UIColor colorFromHexa:@"#f587e4"]];
-    [dropListView setDelegate:self];
-    [dropListView setDataSource:self];
-    [dropListView cutSide:CutterViewSideTypeLeft withDiagonal:100.0f];
-    [self.view addSubview:dropListView];
-    
+    UIView * view = [[UIView alloc] initWithFrame:self.view.frame];
+    [view setBackgroundColor:[UIColor colorFromHexa:@"#f587e4"]];
+    [view cutSide:CutterViewSideTypeTop withDiagonal:100.0f];
+    [self.view addSubview:view];
     
     // Rounded View Example
     UIView * roundedView = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 200, 200)];
     [roundedView setBackgroundColor:[UIColor colorFromHexa:@"538535"]];
     [roundedView setRoundedCorners:UIRectCornerAllCorners radius:CGSizeMake(50, 50)];
-    [dropListView addSubview:roundedView];
+    [view addSubview:roundedView];
     
     // Fade IN/OUT Example
     [roundedView fadeFromInitialAlpha:0.0f finalAlpha:0.7f andDuration:2.0f];
 }
-
-#pragma mark - SNSDropListView Delegate
-- (SNSDropListViewCell*)dropList:(SNSDropListView*)iDropList cellForRow:(NSInteger)iRow
-{
-    SNSDropListViewCell * dropListViewCell = [[SNSDropListViewCell alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 100)];
-    [dropListViewCell setBackgroundColor:[UIColor colorFromHexa:@"#663482"]];
-    return dropListViewCell;
-}
-
-
-#pragma mark - SNSDropListView Datasource
-- (NSInteger)numberOfRowsInDropList:(SNSDropListView*)iDropListView
-{
-    return 5;
-}
-
 @end

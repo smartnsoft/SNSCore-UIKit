@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SNSCore-UIKit/SNSDropListView.h>
-#import <SNSCore-UIKit/SNSDropListViewCell.h>
 
-@interface SNSViewController : UIViewController <SnSDropListDelegate, SnSDropListDataSource>
+@interface SNSViewController : UIViewController
 
 @end

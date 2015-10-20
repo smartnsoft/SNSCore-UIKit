@@ -13,7 +13,9 @@
 typedef NS_ENUM(NSUInteger, CutterViewSideType)
 {
     CutterViewSideTypeRight,
-    CutterViewSideTypeLeft
+    CutterViewSideTypeLeft,
+    CutterViewSideTypeTop,
+    CutterViewSideTypeBottom
 };
 
 

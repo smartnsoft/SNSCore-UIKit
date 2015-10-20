@@ -256,6 +256,16 @@
             points[1] = CGPointMake(self.frame.size.width, self.frame.size.height);
             points[2] = CGPointMake(self.frame.size.width - diagonalWidth, self.frame.size.height);
             break;
+        case CutterViewSideTypeBottom:
+            points[0] = CGPointMake(0, self.frame.size.height);
+            points[1] = CGPointMake(self.frame.size.width, self.frame.size.height);
+            points[2] = CGPointMake(0, self.frame.size.height - diagonalWidth);
+            break;
+        case CutterViewSideTypeTop:
+            points[0] = CGPointMake(0, 0);
+            points[1] = CGPointMake(self.frame.size.width, 0);
+            points[2] = CGPointMake(self.frame.size.width, 0 + diagonalWidth);
+            break;
         default:
             break;
     }

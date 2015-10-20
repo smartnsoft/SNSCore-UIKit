@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SNSCore-UIKit"
-  s.version          = "0.2.3"
+  s.version          = "0.2.4"
   s.summary          = "A short description of SNSCore-UIKit."
   s.description      = <<-DESC
                        An optional longer description of SNSCore-UIKit
