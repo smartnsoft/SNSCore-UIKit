@@ -10,9 +10,9 @@
 public extension UIApplication{
   
   /**
-   Retrieve the top active presented view controller actually displayed for the user
+   Retrieve the top active presented view controller actually displayed to the user
    
-   - parameter base: The root view controller on any root into you want to retrieve the top view controller
+   - parameter base: The root view controller or any root where you want to retrieve the top displayed view controller
    
    - returns: The Top UIVIewController
    */

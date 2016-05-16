@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445E9F981CEA044100225CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445E9F971CEA044100225CBA /* LaunchScreen.storyboard */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		445E9F971CEA044100225CBA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4559A57EF2DBE408E0B9D4B1 /* Pods-SNSCore-UIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSCore-UIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNSCore-UIKit/Pods-SNSCore-UIKit.release.xcconfig"; sourceTree = "<group>"; };
 		556FB283ADFB7B0FCC21C533 /* SNSCore-UIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "SNSCore-UIKit.podspec"; path = "../SNSCore-UIKit.podspec"; sourceTree = "<group>"; };
 		5A4C2033ACA5EE332330955E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				6003F5A6195388D20070C39A /* SNSViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				445E9F971CEA044100225CBA /* LaunchScreen.storyboard */,
 			);
 			path = "SNSCore-UIKit";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
+				445E9F981CEA044100225CBA /* LaunchScreen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

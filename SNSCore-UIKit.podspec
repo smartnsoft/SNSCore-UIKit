@@ -22,6 +22,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks = 'UIKit'
 
+  s.resource_bundles = {
+    'SNSCore-Foundation' => ['Pod/Assets/*.png']
+  }
+
   s.default_subspec = 'Default'
 
   s.subspec 'Default' do |default|
