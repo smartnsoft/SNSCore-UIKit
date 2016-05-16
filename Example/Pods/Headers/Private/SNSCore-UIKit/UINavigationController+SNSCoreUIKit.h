@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/Categories/UINavigationController+SNSCoreUIKit.h
+../../../../../Pod/Classes/ObjC/Categories/UINavigationController+SNSCoreUIKit.h

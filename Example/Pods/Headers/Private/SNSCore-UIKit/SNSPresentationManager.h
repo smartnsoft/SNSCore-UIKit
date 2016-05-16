@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/Helpers/SNSPresentationManager.h
+../../../../../Pod/Classes/ObjC/Helpers/SNSPresentationManager.h

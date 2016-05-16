@@ -7,8 +7,7 @@
 //
 
 #import "SNSViewController.h"
-#import <SNSCore-UIKit/UIView+SNSCoreUIKit.h>
-#import <SNSCore-UIKit/UIColor+SNSCoreUIKit.h>
+@import SNSCore_UIKit;
 
 @interface SNSViewController ()
 
@@ -20,7 +19,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
     // DropListView Example
     UIView * view = [[UIView alloc] initWithFrame:self.view.frame];
     [view setBackgroundColor:[UIColor colorFromHexa:@"#f587e4"]];

@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SNSCore-UIKit"
-  s.version          = "0.2.5"
+  s.version          = "0.3.0"
   s.summary          = "SNCore-UIKit provides usefull and powerfull categories based on UIKit"
   s.homepage         = "https://github.com/smartnsoft/SNSCore-UIKit"
   s.license          = '© Copyright 2011-2015 - Smart&Soft SAS (http://www.smartnsoft.com/)'
@@ -20,12 +20,15 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
   s.requires_arc = true
-
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'SNSCore-UIKit' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
+
+  s.default_subspec = 'Default'
+
+  s.subspec 'Default' do |default|
+    default.source_files = 'Pod/Classes/ObjC/**/*'
+  end
+
+  s.subspec "Swift" do |swift|
+    swift.source_files = 'Pod/Classes/**/*'
+  end
 end

@@ -1,26 +1,32 @@
 {
   "name": "SNSCore-UIKit",
-  "version": "0.1.0",
-  "summary": "A short description of SNSCore-UIKit.",
-  "description": "                       An optional longer description of SNSCore-UIKit\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SNSCore-UIKit",
-  "license": "MIT",
+  "version": "0.2.5",
+  "summary": "SNCore-UIKit provides usefull and powerfull categories based on UIKit",
+  "homepage": "https://github.com/smartnsoft/SNSCore-UIKit",
+  "license": "© Copyright 2011-2015 - Smart&Soft SAS (http://www.smartnsoft.com/)",
   "authors": {
-    "FlorianBasso": "florian@smartnsoft.com"
+    "Smart&Soft": "contact@smartnsoft.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SNSCore-UIKit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/smartnsoft/SNSCore-UIKit.git",
+    "tag": "0.2.5"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0",
+    "tvos": "9.0",
+    "watchos": "2.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "SNSCore-UIKit": [
-      "Pod/Assets/*.png"
-    ]
-  },
-  "frameworks": "UIKit"
+  "frameworks": "UIKit",
+  "default_subspecs": "Default",
+  "subspecs": [
+    {
+      "name": "Default",
+      "source_files": "Pod/Classes/ObjC/**/*"
+    },
+    {
+      "name": "Swift",
+      "source_files": "Pod/Classes/**/*"
+    }
+  ]
 }

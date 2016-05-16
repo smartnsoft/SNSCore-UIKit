@@ -1,11 +1,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
+use_frameworks!
+
 target 'SNSCore-UIKit', :exclusive => true do
-  pod "SNSCore-UIKit", :path => "../"
+  pod "SNSCore-UIKit/Swift", :path => "../"
 end
 
 target 'Tests', :exclusive => true do
-  pod "SNSCore-UIKit", :path => "../"
+  pod "SNSCore-UIKit/Swift", :path => "../"
 
   
 end

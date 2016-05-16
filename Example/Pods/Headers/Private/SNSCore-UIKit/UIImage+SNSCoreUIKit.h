@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/Categories/UIImage+SNSCoreUIKit.h
+../../../../../Pod/Classes/ObjC/Categories/UIImage+SNSCoreUIKit.h

@@ -1,0 +1,6 @@
+framework module SNSCore_UIKit {
+  umbrella header "SNSCore-UIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

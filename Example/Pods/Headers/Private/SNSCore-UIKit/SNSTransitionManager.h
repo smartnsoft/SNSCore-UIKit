@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/Helpers/SNSTransitionManager.h
+../../../../../Pod/Classes/ObjC/Helpers/SNSTransitionManager.h

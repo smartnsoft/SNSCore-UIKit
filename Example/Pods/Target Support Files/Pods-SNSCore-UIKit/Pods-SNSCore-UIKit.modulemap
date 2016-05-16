@@ -1,0 +1,6 @@
+framework module Pods_SNSCore_UIKit {
+  umbrella header "Pods-SNSCore-UIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

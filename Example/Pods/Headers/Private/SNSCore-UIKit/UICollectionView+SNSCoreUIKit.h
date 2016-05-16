@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/Categories/UICollectionView+SNSCoreUIKit.h
+../../../../../Pod/Classes/ObjC/Categories/UICollectionView+SNSCoreUIKit.h

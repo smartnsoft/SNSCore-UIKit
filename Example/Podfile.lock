@@ -1,14 +1,14 @@
 PODS:
-  - SNSCore-UIKit (0.1.0)
+  - SNSCore-UIKit/Swift (0.2.5)
 
 DEPENDENCIES:
-  - SNSCore-UIKit (from `../`)
+  - SNSCore-UIKit/Swift (from `../`)
 
 EXTERNAL SOURCES:
   SNSCore-UIKit:
     :path: ../
 
 SPEC CHECKSUMS:
-  SNSCore-UIKit: 1db095beca3248e29ef8d50fa11c84c313d529bd
+  SNSCore-UIKit: 8a0b5bb97dd64df99d4fdc0c525c7e3c82985955
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.39.0

@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/Categories/UIColor+SNSCoreUIKit.h
+../../../../../Pod/Classes/ObjC/Categories/UIColor+SNSCoreUIKit.h
