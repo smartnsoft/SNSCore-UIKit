@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F97846D9DAFCA63BE4B6693B'
+               BlueprintIdentifier = 'A9FF03B08D960D80E2426281'
                BlueprintName = 'SNSCore-UIKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SNSCore_UIKit.framework'>

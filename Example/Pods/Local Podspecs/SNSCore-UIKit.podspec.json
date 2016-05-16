@@ -1,15 +1,15 @@
 {
   "name": "SNSCore-UIKit",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "summary": "SNCore-UIKit provides usefull and powerfull categories based on UIKit",
   "homepage": "https://github.com/smartnsoft/SNSCore-UIKit",
-  "license": "© Copyright 2011-2015 - Smart&Soft SAS (http://www.smartnsoft.com/)",
+  "license": "© Copyright 2011-2016 - Smart&Soft SAS (http://www.smartnsoft.com/)",
   "authors": {
     "Smart&Soft": "contact@smartnsoft.com"
   },
   "source": {
     "git": "https://github.com/smartnsoft/SNSCore-UIKit.git",
-    "tag": "0.3.0"
+    "tag": "0.4.0"
   },
   "platforms": {
     "ios": "8.0",
